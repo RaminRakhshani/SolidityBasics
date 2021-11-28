@@ -8,14 +8,14 @@ pragma solidity ^0.8.10;
 /// @dev  Some Descriptions
 /// @custom:experimental This is an experimental contract
 contract Variables {
-    uint256 public number = 20; //state variable
-    bool private paused = true; //state variable
+    uint256 public number = 20; //pulic access level
+    bool private paused = true; //public access level
     uint256 internal time = block.timestamp; // state variable saving a global variable
 
     function myFunc() public view {
-        uint256 localVariable = 20; //local variable
-        bool localPaused = true; //local variable
-        address theSenderAddress = msg.sender; //local variable saving a global variable
+        // uint256 localVariable = 20; //local variable
+        // bool localPaused = true; //local variable
+        // address theSenderAddress = msg.sender; //local variable saving a global variable
     }
 }
 
